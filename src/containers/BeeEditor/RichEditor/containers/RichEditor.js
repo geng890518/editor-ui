@@ -341,7 +341,7 @@ class RichEditor extends Component {
           this.setState({
             editorState: EditorState.createEmpty(),
           });
-          window.location.href = 'http://localhost:3000/content';
+          window.location.href = 'http://dev.beegree.cc/content';
         } else {
           this.setCounter(this.state.counter - 1);
           setTimeout(timer, 1000);
