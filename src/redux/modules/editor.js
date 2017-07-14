@@ -346,7 +346,6 @@ export default function reducer(state = initialState, action = {}) {
     case GETCOLLECTIONS:
       return {
         ...state,
-        posting: true,
         posted: false,
       };
     case GETCOLLECTIONS_SUCCESS:
