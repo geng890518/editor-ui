@@ -1,0 +1,31 @@
+.tag {
+  display: inline-block;
+  line-height: 28px;
+  height: 28px;
+  padding: 0px 4px 0px 8px;
+  border-radius: 2px;
+  border: 1px solid #e9e9e9;
+  background: #f7f7f7;
+  font-size: 12px;
+  vertical-align: middle;
+  opacity: 1;
+  overflow: hidden;
+  margin: 2px 8px 2px 0;
+  cursor: pointer;
+}
+
+.tag:hover {
+  transition: color 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.cross:hover {
+  opacity: 0.85;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.cross {
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: 4px;
+  display: inline;
+  transition: color 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}

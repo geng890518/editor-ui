@@ -1,0 +1,33 @@
+.base {
+  text-align: center;
+  height: 100%;
+}
+
+.info {
+  width: 100%;
+  color: #7f7f7f;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 200;
+  top: 70px;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+  line-height: 1.8;
+  i {
+    margin-right: 10px
+  }
+}
+
+.nopadding {
+  margin-left:-15px;
+  margin-right:-15px;
+  background-color: #e9ebee;
+  border-radius: 0px;
+  @media screen and (min-width: 768px) {
+    border-radius: 7px 7px 0 0;
+  }
+  .dropzone {
+    border:none;
+  }
+}

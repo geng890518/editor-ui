@@ -1,0 +1,21 @@
+.container {
+  text-align: center;
+  line-height: 30px;
+  display: block;
+  top: -30px;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+}
+
+.container:before {
+  content: '...';
+  display: inline-block;
+  color: rgba(0,0,0,.6);
+  position: relative;
+  font-family: medium-content-slab-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+  letter-spacing: .6em;
+}

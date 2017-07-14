@@ -1,0 +1,13 @@
+.iframeWrapper {
+  text-align: center;
+  @media (max-width: 321px) {
+      margin-left: -27px;
+  }
+}
+.iframeWrapper iframe {
+  width: 100% !important;
+}
+// .iframewidth {
+//   width:100% !important;
+//   height: 30px !important;
+// }

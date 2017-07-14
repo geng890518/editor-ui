@@ -1,0 +1,42 @@
+.addcontainer {
+  color: white;
+  position: relative;
+  top: -70px;
+  z-index: 1000;
+}
+.address {
+  width: auto;
+  padding: 15px 0 15px 20px;
+  height: 70px;
+  background: black;
+  opacity: 0.8;
+}
+.nameinfo {
+  font-size: 16px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.addressinfo {
+  font-size: 14px;
+  overflow: hidden;
+  margin-top: -30px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.show {
+  display:block;
+}
+.hidden {
+  display:none;
+}
+.panelContainer {
+  width: 780px;
+  height: 200px;
+  background: white;
+  border-radius: 0 0 6px 6px;
+}

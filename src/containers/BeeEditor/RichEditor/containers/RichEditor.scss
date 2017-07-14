@@ -1,0 +1,168 @@
+
+.info {
+  width: 100%;
+  font-size: 14px;
+  top: 60px;
+  position: relative;
+}
+
+#richEditor {
+  margin: 0px auto 50px auto !important;
+  padding: 0 25px 25px 25px !important;
+}
+
+.editor {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #444;
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0px auto 50px auto;
+  padding: 0 25px 25px 25px;
+  font-size: 18px;
+}
+
+.tip {
+  width: 100%;
+  font-size: 12px;
+  color: #999;
+  top: 60px;
+  position: relative;
+}
+
+.base {
+  min-height: 1920px;
+  cursor: auto;
+  background-color: white;
+  margin-top: 0px;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+  }
+  @media screen and (max-width: 768px) {
+    min-height: 750px;
+  }
+}
+
+.base_finished {
+  min-height: 800px;
+  background-color: white;
+  div {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    top: 150px;
+    position: relative;
+  }
+  p {
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    top: 155px;
+    position: relative;
+    color: #b2b2b2;
+  }
+}
+
+.element {
+  position: absolute;
+  width: 100%;
+  overflow: visible;
+  pointer-events: auto;
+  transform-origin: 50% 50% 0px;
+  border-radius: 4px;
+  color: rgb(153, 153, 153);
+  line-height: 96px;
+  padding-left: 32px;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.tools {
+  position: absolute;
+  bottom: 100px;
+}
+
+.label {
+  height: 30px;
+}
+.input {
+  outline: none;
+  border: none;
+  font-weight: normal;
+  margin-left: 40px;
+  width: 65%;
+  height:30px;
+}
+.input:focus {
+  height: 30px;
+  border-radius: 5px;
+  border-color: initial;
+  outline: line;
+}
+.show {
+  display:block;
+}
+.hidden {
+  display:none;
+}
+.panelContainer {
+  width: 780px;
+  height: 200px;
+  background: white;
+  border-radius: 0 0 6px 6px;
+}
+.search {
+  position: relative;
+  top: 28px;
+  left: 12px;
+  width: 27px;
+}
+.buttonDiv {
+  float: right;
+}
+.cancel {
+  border: 1px solid rgb(206, 208, 212);
+  border-radius: 5px;
+  box-sizing: content-box;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 8px;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  background: rgba(220,220,220,1);
+  width: 70px;
+  height: 27px;
+  font-weight: 500;
+  color: black;
+  outline: none;
+  margin-right: 20px;
+}
+.mapHead {
+  margin-top: -25px;
+}
+.complete {
+  border: 1px solid rgb(206, 208, 212);
+  border-radius: 5px;
+  box-sizing: content-box;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 8px;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  background: #0099e5;
+  width: 70px;
+  height: 27px;
+  font-weight: 500;
+  color: white;
+  outline: none;
+}

@@ -1,0 +1,29 @@
+.title {
+  font-size: 28px;
+  padding: 25px;
+  color: black;
+  font-weight: 600;
+}
+
+.bullet {
+  //padding: 0;
+  //color: #c2c6cc;
+  //line-height: 1.4;
+  //margin-left: 3px;
+  ///* padding-right: 3px; */
+  //margin-right: 3px;
+  padding: 2px 6px 0 6px;
+  display: block;
+  line-height: 0.8;
+  color: #c2c6cc;
+  float: left;
+}
+
+.time {
+  display: block;
+  //line-height: 0.4;
+  color: #c2c6cc;
+  float: left;
+  padding-top: 3px;
+  font-size: 13px;
+}

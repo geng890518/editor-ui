@@ -1,0 +1,291 @@
+
+@font-face {
+    font-family: 'alkren';
+    src:
+        url('./fonts/alkren.ttf') format('truetype'),
+        url('./fonts/alkren.woff') format('woff'),
+        url('./fonts/alkren.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+    font-family: 'alkren' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.editor {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #444;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 20px auto 50px auto;
+  padding: 25px;
+  padding-top: 0px;
+  font-size: 18px;
+}
+.editor .paragraph {
+  margin-bottom: 2.5rem;
+}
+.editor blockquote {
+  margin-left: 0px;
+  padding-left: 21px;
+  border-left: 3px solid #444;
+}
+.editor img {
+  width: 100%;
+  max-width: 100%;
+}
+.side-toolbar {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  margin-left: -110px;
+  width: 70px;
+}
+.side-toolbar i {
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.side-toolbar i.a-menu {
+  font-size: 22px;
+}
+
+.sidebar__menu {
+ float: left;
+ left: -87px;
+ position: absolute;
+}
+
+ @media (max-width: 900px) {
+   .sidebar__menu {
+     float: left;
+     left: -37px;
+     position: absolute;
+   }
+ }
+
+.sidebar__sidemenu_wrapper {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+.sidemenu {
+  /*position: relative;*/
+  width: 36px;
+  text-align: center;
+}
+.sidemenu__button {
+  margin-left: 2px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  height: 32px;
+  font-size: 0;
+  padding: 0;
+  width: 32px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+  background: none;
+}
+.sidemenu__button:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #181818;
+}
+
+@media (max-width: 900px) {
+  .sidemenu__button:before {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.sidemenu__button:before:hover {
+  background-color: #333333;
+}
+.sidemenu__button--open {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.sidemenu__button--open:before {
+  background-color: #0669de;
+}
+.sidemenu__button__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -11px 0 0 -11px;
+}
+.sidemenu__items {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+  padding-top: 2px;
+  -webkit-transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease;
+  overflow: hidden;
+  max-height: 0;
+  width: 36px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .sidemenu__items {
+    margin-top: 0px;
+    padding-top:0px;
+  }
+}
+
+.sidemenu__items--open {
+  max-height: 156px;
+}
+.sidemenu__items .sidemenu__button {
+  background: none;
+}
+.sidemenu__items .sidemenu__button svg {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin: -11px 0 0 -11px;
+}
+.sidemenu__items .sidemenu__button:before {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  background-color: #181818;
+}
+.sidemenu__items .sidemenu__button:hover:before {
+  -webkit-transform: scale(1.125);
+  transform: scale(1.125);
+}
+.sidemenu__item {
+  height: 40px;
+  margin-left: -2px;
+}
+.toolbar__arrow {
+  display: inline-block;
+  top: 100%;
+  left: 76px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #181818 transparent transparent;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+}
+.toolbar {
+  background: yellow;
+  height: 0;
+  position: absolute;
+  display: none;
+  z-index: 10; }
+.toolbar--open {
+    display: block; }
+.toolbar__error-msg {
+    margin: 0;
+    height: 0;
+    height: 0;
+    -webkit-transition: height 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out; }
+.toolbar--error .toolbar__wrapper {
+    background-color: #E83F26; }
+.toolbar--error .toolbar__arrow {
+    border-color: #E83F26 transparent transparent; }
+.toolbar--error .toolbar__error-msg {
+    color: #FFF;
+    margin: -8px 0 0 20px;
+    padding-bottom: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    height: 28px; }
+.toolbar--error .toolbar__button {
+    color: #FFF; }
+.toolbar__wrapper {
+    background-color: #181818;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+    left: -50%;
+    position: relative;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out; }
+.toolbar__list {
+    padding: 0 8px;
+    margin: 0;
+    white-space: nowrap; }
+.toolbar__arrow {
+    display: inline-block;
+    top: 100%;
+    left: 50%;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #181818 transparent transparent;
+    margin-left: -8px;
+    -webkit-transition: border-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out; }
+.toolbar__item {
+    display: inline-block;
+    color: #ccc; }
+.toolbar__item:hover {
+      color: #fff; }
+.toolbar__item--active {
+      color: #3192e7; }
+.toolbar__item--active:hover {
+        color: #3192e7; }
+.toolbar__item--separator {
+      border-right: 1px solid #333;
+      height: 20px;
+      margin: 0 8px; }
+.toolbar__button {
+    padding: 0;
+    color: rgb(204, 204, 204);
+    cursor: pointer;
+    border: 0;
+    height: 56px;
+    width: 40px;
+    background: transparent; }
+.toolbar__input {
+    background-color: transparent;
+    border: none;
+    color: #fafafa;
+    font-size: 0.875rem;
+    height: auto;
+    line-height: 1.2rem;
+    margin: 0;
+    padding: 20px;
+    width: 250px; }
+.toolbar__input:focus {
+      outline: none; }
+.toolbar__input-button {
+    padding-right: 16px; }
+.block__hover {
+  padding: 8px;
+  margin: -8px; }
