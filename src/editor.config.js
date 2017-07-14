@@ -1,15 +1,15 @@
 require('babel-polyfill');
 
 const EDITORBASEURL = {
-  dev: 'http://192.168.12.127:8080/car-friend/v1',
-  test: 'https://test-editor-api.fblife.com',
-  prod: 'https://editor-api.fblife.com'
+  dev: 'http://dev.beegree.cc/api/v1/',
+  test: 'http://dev.beegree.cc/api/v1/',
+  prod: 'http://dev.beegree.cc/api/v1/'
 };
 
 const QINIUBASEURL = {
   dev: 'https://dev-utility.fblife.com',
-  test: 'https://test-utility.fblife.com',
-  prod: 'https://utility.fblife.com'
+  test: 'https://dev-utility.fblife.com',
+  prod: 'https://dev-utility.fblife.com'
 };
 
 const SERVERPORT = {
