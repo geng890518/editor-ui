@@ -323,8 +323,6 @@ class RichEditor extends Component {
       const draft = {
         content: JSON.stringify(draftContent)
       };
-      // console.log(draft);
-      console.log(draft);
       this.props.postDraft(draft.content);
     };
 
@@ -367,7 +365,7 @@ class RichEditor extends Component {
           this.setState({
             editorState: EditorState.createEmpty(),
           });
-          window.location.href = 'http://dev.beegree.cc/content';
+          window.location.href = 'http://admin.beegree.cc/content';
         } else {
           this.setCounter(this.state.counter - 1);
           setTimeout(timer, 1000);
