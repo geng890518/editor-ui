@@ -281,6 +281,32 @@ class RichEditor extends Component {
         elements: convertElementTypeToNumber(elements),
         location: this.state.locationForEditor
       };
+      let text = '';
+      const allElements = [];
+      if (this.props.type === '20' || this.props.type === '30') {
+        convertElementTypeToNumber(elements).map((element) => {
+          if (element.type === 10) {
+            text += element.media.plain_text;
+          }
+          return null;
+        });
+        const textElement = {
+          type: 10,
+          media: {
+            alignment: 'left',
+            plain_text: text,
+            style: 'body'
+          }
+        };
+        allElements.push(textElement);
+        convertElementTypeToNumber(elements).map((element) => {
+          if (element.type !== 10) {
+            allElements.push(element);
+          }
+          return null;
+        });
+        draftContent.elements = allElements;
+      }
       if (this.props.story) {
         draftContent = {
           id: this.props.story.id,
