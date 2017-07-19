@@ -34,7 +34,6 @@ export default class EditorFooter extends Component {
   }
 
   render() {
-    console.log(this.props.collections);
     const styles = require('./EditorFooter.scss');
     const borderColor = {
       borderColor: '#ced0d4',

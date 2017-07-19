@@ -511,6 +511,7 @@ export function setElements(elements) {
 }
 
 export function addTag(elements) {
+  console.log(elements);
   return {
     type: ADDTAG,
     elements,

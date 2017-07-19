@@ -23,10 +23,9 @@ export default class CascaderButton extends Component {
     }
     const data = {
       id: option[0].info.id,
-      category: option[0].info.category,
-      type: option[0].info.type
+      category: 20,
+      type: 50
     };
-    console.log(data);
     this.props.addTag(data);
   }
   render() {

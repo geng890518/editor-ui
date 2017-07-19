@@ -281,9 +281,9 @@ class RichEditor extends Component {
         elements: convertElementTypeToNumber(elements),
         location: this.state.locationForEditor
       };
-      let text = '';
-      const allElements = [];
       if (this.props.type === '20' || this.props.type === '30') {
+        let text = '';
+        const allElements = [];
         convertElementTypeToNumber(elements).map((element) => {
           if (element.type === 10) {
             text += element.media.plain_text;
