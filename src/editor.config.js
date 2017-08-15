@@ -1,9 +1,9 @@
 require('babel-polyfill');
 
 const EDITORBASEURL = {
-  dev: 'http://dev.beegree.cc/api/v1/',
-  test: 'http://dev.beegree.cc/api/v1/',
-  prod: 'http://dev.beegree.cc/api/v1/'
+  dev: 'http://club-dev.fblife.com/api/v1/',
+  test: 'http://club-dev.fblife.com/api/v1/',
+  prod: 'http://club-dev.fblife.com/api/v1/'
 };
 
 const QINIUBASEURL = {

@@ -365,7 +365,7 @@ class RichEditor extends Component {
           this.setState({
             editorState: EditorState.createEmpty(),
           });
-          window.location.href = 'http://admin.beegree.cc/content';
+          window.location.href = 'http://club-admin-dev.fblife.com/content';
         } else {
           this.setCounter(this.state.counter - 1);
           setTimeout(timer, 1000);
