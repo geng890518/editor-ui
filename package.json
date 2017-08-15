@@ -48,14 +48,6 @@
         "APIPORT": 4040
       }
     },
-    "start-prod-api": {
-      "command": "node ./bin/api.js",
-      "env": {
-        "NODE_PATH": "./api",
-        "NODE_ENV": "production",
-        "APIPORT": 4040
-      }
-    },
     "start-dev": {
       "command": "node ./bin/server.js",
       "env": {
