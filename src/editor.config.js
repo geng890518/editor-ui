@@ -1,8 +1,8 @@
 require('babel-polyfill');
 
 const EDITORBASEURL = {
-  // dev: 'http://club-dev.fblife.com/api/v1',
-  dev: 'http://192.168.12.99:8080/car-friend/v1',
+  dev: 'http://club-dev.fblife.com/api/v1',
+  // dev: 'http://192.168.12.99:8080/car-friend/v1',
   test: 'http://club-dev.fblife.com/api/v1',
   prod: 'http://club-dev.fblife.com/api/v1'
 };
