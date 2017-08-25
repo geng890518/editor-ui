@@ -14,9 +14,9 @@ const QINIUBASEURL = {
 };
 
 const SERVERPORT = {
-  dev: 7000,
-  test: 7000,
-  prod: 7000
+  dev: 6000,
+  test: 6000,
+  prod: 6000
 };
 
 /**
