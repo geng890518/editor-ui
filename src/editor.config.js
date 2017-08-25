@@ -1,10 +1,10 @@
 require('babel-polyfill');
 
 const EDITORBASEURL = {
-  dev: 'http://club-dev.fblife.com/api/v1',
+  dev: 'http://club-test.fblife.com/api/v1',
   // dev: 'http://192.168.12.99:8080/car-friend/v1',
-  test: 'http://club-dev.fblife.com/api/v1',
-  prod: 'http://club-dev.fblife.com/api/v1'
+  test: 'http://club-test.fblife.com/api/v1',
+  prod: 'http://club-test.fblife.com/api/v1'
 };
 
 const QINIUBASEURL = {
@@ -15,7 +15,7 @@ const QINIUBASEURL = {
 
 const SERVERPORT = {
   dev: 7000,
-  test: 4001,
+  test: 7000,
   prod: 7000
 };
 
