@@ -1,16 +1,16 @@
 require('babel-polyfill');
 
 const EDITORBASEURL = {
-  dev: 'http://club-test.fblife.com/api/v1',
+  dev: 'http://club.fblife.com/api/v1',
   // dev: 'http://192.168.12.99:8080/car-friend/v1',
-  test: 'http://club-test.fblife.com/api/v1',
-  prod: 'http://club-test.fblife.com/api/v1'
+  test: 'http://club.fblife.com/api/v1',
+  prod: 'http://club.fblife.com/api/v1'
 };
 
 const QINIUBASEURL = {
-  dev: 'https://dev-utility.fblife.com',
-  test: 'https://dev-utility.fblife.com',
-  prod: 'https://dev-utility.fblife.com'
+  dev: 'https://utility.fblife.com',
+  test: 'https://utility.fblife.com',
+  prod: 'https://utility.fblife.com'
 };
 
 const SERVERPORT = {
