@@ -60,7 +60,7 @@ export function isBasicParamsJsonLoaded(globalState) {
 }
 
 export function loadBasicParamsJson() {
-  const url = 'https://dev-utility.fblife.com/image/common/get-token?bucket=content';
+  const url = 'https://utility.fblife.com/image/common/get-token?bucket=content';
   return {
     types: ['LOAD_BASIC_PARAMS_JSON', 'LOAD_BASIC_PARAMS_JSON_SUCCESS', 'LOAD_BASIC_PARAMS_JSON_FAIL'],
     promise: () => new Promise((resolve, reject) => {
